@@ -1,0 +1,80 @@
+html{
+    overflow-x: hidden;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.title{
+    font-family: 'Raleway', sans-serif;
+}
+
+.section{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.textBG{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: fit-content;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    max-width: 35%;
+    border-radius: 10px;
+    font-style: oblique;
+    pointer-events: none;
+}
+
+.folioItem{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.navBtn{
+    margin: 0px 0.75rem;
+}
+
+#folioLink{
+    width: fit-content;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+#clickHere{
+    position: relative;
+    top: -42px;
+    left: 3.5rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.middle-indicator{
+    position:absolute;
+    top:50%;
+}
+.middle-indicator-text{
+    font-size: 4.2rem;
+}
+a.middle-indicator-text{
+    color:white !important;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.content-indicator{
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px; 
+}
+.indicators{
+    visibility: hidden;
+}
