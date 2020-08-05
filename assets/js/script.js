@@ -11,9 +11,14 @@ function togglePortfolio(){
         $("#portfolio").carousel({
             full_width: true,
             indicators: true,
+            noWrap: true,
             onCycleTo: function(){
                 setCarouselLink(this.center)
             }
+        });
+
+        $("#folioLink").on("click", function(){
+            open($("#folioLink").data("href"));
         });
 
         $("#portfolioButton").text("Close Portfolio");
@@ -21,24 +26,23 @@ function togglePortfolio(){
 }
 
 function setCarouselLink(index){
-    switch(index % 3){
+    switch(index){
         case 0:
             $("#folioLink").css("display", "none");
             break;
         case 1:
             $("#folioLink").data("href", "https://jasperjroth.github.io/MoodoMovie/")
             $("#folioLink").css("display", "block");
-            $("#folioLink").on("click", function(){
-                open($("#folioLink").data("href"));
-            });
             break;
         case 2:
             $("#folioLink").data("href", "https://jasperjroth.github.io/TrainScheduler/")
             $("#folioLink").css("display", "block");
-            $("#folioLink").on("click", function(){
-                open($("#folioLink").data("href"));
-            });
             break;
+        case 3:
+            $("#folioLink").data("href", "https://jasperjroth.github.io/unit-4-game/")
+            $("#folioLink").css("display", "block");
+            
+        break;
         default:
             $("#folioLink").css("display", "none");
     }
