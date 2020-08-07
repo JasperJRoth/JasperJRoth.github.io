@@ -31,17 +31,16 @@ function setCarouselLink(index){
             $("#folioLink").css("display", "none");
             break;
         case 1:
-            $("#folioLink").data("href", "https://jasperjroth.github.io/MoodoMovie/")
+            $("#folioLink").data("href", "https://jasperjroth.github.io/MoodoMovie/");
             $("#folioLink").css("display", "block");
             break;
         case 2:
-            $("#folioLink").data("href", "https://jasperjroth.github.io/TrainScheduler/")
+            $("#folioLink").data("href", "https://jasperjroth.github.io/TrainScheduler/");
             $("#folioLink").css("display", "block");
             break;
         case 3:
-            $("#folioLink").data("href", "https://jasperjroth.github.io/unit-4-game/")
+            $("#folioLink").data("href", "https://jasperjroth.github.io/unit-4-game/");
             $("#folioLink").css("display", "block");
-            
         break;
         default:
             $("#folioLink").css("display", "none");
